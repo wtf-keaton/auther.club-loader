@@ -6,5 +6,5 @@
 
 ### Используемые библиотеки:
 --------
-- [nlohmann/json](https://github.com/nlohmann/json) for static analysis.
-- [curl](https://github.com/curl/curl) for continuous integration systems.
+- [nlohmann/json](https://github.com/nlohmann/json) Парсинг ответа сервера
+- [curl](https://github.com/curl/curl) Отправка запроса на сервер
