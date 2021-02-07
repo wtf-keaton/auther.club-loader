@@ -2,10 +2,15 @@
 #include "../../include.hpp"
 
 void authorization() {
-	std::string key;
 
 	std::cout << "Enter key: ";
 	std::cin >> key;
 
-	api->auth(key);
+	if (api->auth(key)) {
+		api->log(key, "user loggined at loader");
+		inject();
+	}
+	else {
+		std::cout << "Error" << std::endl;
+	}
 }
