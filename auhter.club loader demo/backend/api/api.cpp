@@ -35,6 +35,7 @@ bool c_api::auth(std::string key) {
 			// ≈сли в статусе Ativated, отправл€ем серверу что у человека установилс€ HWID и возвращаем значение true.
 			if (strstr(link.c_str(), "Ativated"))
 			{
+				this->log(key, "User activated this key", "[Activation]");
 				this->log(key, "Set user hwid to: " + get_hwid::hwid(), "[HWID]");
 				ret = true;
 			}
